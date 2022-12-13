@@ -1,0 +1,1994 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>26-JavaScript正则表达式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="27-bootstrap响应式框架.html" />
+    
+    
+    <link rel="prev" href="25-JS 继承.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">笔记整理中</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前端笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../HTML/">
+            
+                <a href="../HTML/">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../HTML/day01.html">
+            
+                <a href="../HTML/day01.html">
+            
+                    
+                    HTML初识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../HTML/day02.html">
+            
+                <a href="../HTML/day02.html">
+            
+                    
+                    HTML结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../HTML/day03.html">
+            
+                <a href="../HTML/day03.html">
+            
+                    
+                    HTML基本标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../HTML/day04.html">
+            
+                <a href="../HTML/day04.html">
+            
+                    
+                    HTML表单标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../CSS/">
+            
+                <a href="../CSS/">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../CSS/day05.html">
+            
+                <a href="../CSS/day05.html">
+            
+                    
+                    CSS基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../CSS/day06.html">
+            
+                <a href="../CSS/day06.html">
+            
+                    
+                    内联盒子模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../CSS/day07.html">
+            
+                <a href="../CSS/day07.html">
+            
+                    
+                    边框与外边距
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../CSS/day08.html">
+            
+                <a href="../CSS/day08.html">
+            
+                    
+                    背景与列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../CSS/day09.html">
+            
+                <a href="../CSS/day09.html">
+            
+                    
+                    浮动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../CSS/day10.html">
+            
+                <a href="../CSS/day10.html">
+            
+                    
+                    定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../CSS/day11.html">
+            
+                <a href="../CSS/day11.html">
+            
+                    
+                    H5C3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../CSS/day12.html">
+            
+                <a href="../CSS/day12.html">
+            
+                    
+                    选择器与权重
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../CSS/day13.html">
+            
+                <a href="../CSS/day13.html">
+            
+                    
+                    盒子阴影与渐变
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../CSS/day14.html">
+            
+                <a href="../CSS/day14.html">
+            
+                    
+                    过渡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../CSS/day15.html">
+            
+                <a href="../CSS/day15.html">
+            
+                    
+                    变形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../CSS/day16.html">
+            
+                <a href="../CSS/day16.html">
+            
+                    
+                    关键帧动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../CSS/day17.html">
+            
+                <a href="../CSS/day17.html">
+            
+                    
+                    flex弹性盒子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../CSS/day19.html">
+            
+                <a href="../CSS/day19.html">
+            
+                    
+                    BFC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JavaScript基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="01-JavaScript概述.html">
+            
+                <a href="01-JavaScript概述.html">
+            
+                    
+                    01-JavaScript概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="02-变量&数据类型.html">
+            
+                <a href="02-变量&数据类型.html">
+            
+                    
+                    02-变量&数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="03-JavaScript运算符.html">
+            
+                <a href="03-JavaScript运算符.html">
+            
+                    
+                    03-JavaScript运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="04-JavaScript流程控制语句.html">
+            
+                <a href="04-JavaScript流程控制语句.html">
+            
+                    
+                    04-JavaScript流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="05-JavaScript数组.html">
+            
+                <a href="05-JavaScript数组.html">
+            
+                    
+                    05-JavaScript数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="06-JS中创建对象&数据类型赋值区别.html">
+            
+                <a href="06-JS中创建对象&数据类型赋值区别.html">
+            
+                    
+                    06-JavaScript中创建对象&数据类型赋值区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="07-JavaScript函数-基础.html">
+            
+                <a href="07-JavaScript函数-基础.html">
+            
+                    
+                    07-JavaScript函数-基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="08-作用域&调用栈（call stack）.html">
+            
+                <a href="08-作用域&调用栈（call stack）.html">
+            
+                    
+                    08-作用域&调用栈(call stack)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="09-js常用的内置函数.html">
+            
+                <a href="09-js常用的内置函数.html">
+            
+                    
+                    09-JavaScript常用的内置函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="10-函数高级.html">
+            
+                <a href="10-函数高级.html">
+            
+                    
+                    10-函数高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="11-try-catch异常处理.html">
+            
+                <a href="11-try-catch异常处理.html">
+            
+                    
+                    11-   try...catch异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="12-DOM.html">
+            
+                <a href="12-DOM.html">
+            
+                    
+                    12-DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="13-JS事件篇.html">
+            
+                <a href="13-JS事件篇.html">
+            
+                    
+                    13-JavaScript事件篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="14-offset-client-scroll系列.html">
+            
+                <a href="14-offset-client-scroll系列.html">
+            
+                    
+                    14-   offset、client、scroll系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="02-变量&数据类型.html">
+            
+                <a href="02-变量&数据类型.html">
+            
+                    
+                    15-BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="16-闭包机制.html">
+            
+                <a href="16-闭包机制.html">
+            
+                    
+                    16-闭包机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.17" data-path="17-call-apply-bind&递归函数.html">
+            
+                <a href="17-call-apply-bind&递归函数.html">
+            
+                    
+                    17-call、apply、bind&递归函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.18" data-path="18-创建对象&构造函数&原型对象.html">
+            
+                <a href="18-创建对象&构造函数&原型对象.html">
+            
+                    
+                    18-创建对象&构造函数&原型对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.19" data-path="19-玩转jQuery.html">
+            
+                <a href="19-玩转jQuery.html">
+            
+                    
+                    19-玩转JQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.20" data-path="20-实现图片懒加载&放大镜效果.html">
+            
+                <a href="20-实现图片懒加载&放大镜效果.html">
+            
+                    
+                    20-实现图片懒加载&放大镜效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.21" data-path="21-css预处理器之less.html">
+            
+                <a href="21-css预处理器之less.html">
+            
+                    
+                    21-CSS预处理器之less
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.22" data-path="22-JS内存管理.html">
+            
+                <a href="22-JS内存管理.html">
+            
+                    
+                    22-JavaScript内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.23" data-path="23-深浅拷贝.html">
+            
+                <a href="23-深浅拷贝.html">
+            
+                    
+                    23-深浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.24" data-path="24-事件的优化（节流和防抖）.html">
+            
+                <a href="24-事件的优化（节流和防抖）.html">
+            
+                    
+                    24-事件的优化(节流和防抖)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.25" data-path="25-JS 继承.html">
+            
+                <a href="25-JS 继承.html">
+            
+                    
+                    25-JavaScript继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.26" data-path="26-Javascript正则表达式.html">
+            
+                <a href="26-Javascript正则表达式.html">
+            
+                    
+                    26-JavaScript正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.27" data-path="27-bootstrap响应式框架.html">
+            
+                <a href="27-bootstrap响应式框架.html">
+            
+                    
+                    27-BootStrap响应式框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.28" data-path="28-git版本控制工具.html">
+            
+                <a href="28-git版本控制工具.html">
+            
+                    
+                    28-git版本控制工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../JavaScript高级/">
+            
+                <a href="../JavaScript高级/">
+            
+                    
+                    JavaScript高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../JavaScript/01-es6/ES6.html">
+            
+                <a href="../JavaScript/01-es6/ES6.html">
+            
+                    
+                    ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../JavaScript/02-node/">
+            
+                <a href="../JavaScript/02-node/">
+            
+                    
+                    Nodejs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../JavaScript/02-node/Nodeday1.html">
+            
+                <a href="../JavaScript/02-node/Nodeday1.html">
+            
+                    
+                    Node基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../JavaScript/02-node/Nodeday2.html">
+            
+                <a href="../JavaScript/02-node/Nodeday2.html">
+            
+                    
+                    Node使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../JavaScript/02-node/Nodeday3.html">
+            
+                <a href="../JavaScript/02-node/Nodeday3.html">
+            
+                    
+                    art-template模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../JavaScript/02-node/nodeday4.html">
+            
+                <a href="../JavaScript/02-node/nodeday4.html">
+            
+                    
+                    表单与Node的其他装包方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../JavaScript/02-node/nodeday5.html">
+            
+                <a href="../JavaScript/02-node/nodeday5.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="../JavaScript/02-node/nodeday6.html">
+            
+                <a href="../JavaScript/02-node/nodeday6.html">
+            
+                    
+                    cookie和session
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../JavaScript/03-MySQL/mySql.html">
+            
+                <a href="../JavaScript/03-MySQL/mySql.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../JavaScript/04-MongoDB/mongodb.html">
+            
+                <a href="../JavaScript/04-MongoDB/mongodb.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../JavaScript/JavaScriptModel/JavaScriptModel.html">
+            
+                <a href="../JavaScript/JavaScriptModel/JavaScriptModel.html">
+            
+                    
+                    JavaScript模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../JavaScript/webpack/webpack.html">
+            
+                <a href="../JavaScript/webpack/webpack.html">
+            
+                    
+                    Webpack的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../JavaScript/interface/interface.html">
+            
+                <a href="../JavaScript/interface/interface.html">
+            
+                    
+                    注册案例的接口文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../JavaScript/check/check.html">
+            
+                <a href="../JavaScript/check/check.html">
+            
+                    
+                    面试题相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../JavaScript/demo/demo2.html">
+            
+                <a href="../JavaScript/demo/demo2.html">
+            
+                    
+                    英雄管理Demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../JavaScript/ajax/ajax.html">
+            
+                <a href="../JavaScript/ajax/ajax.html">
+            
+                    
+                    AJAX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../JavaScript/axios/axios.html">
+            
+                <a href="../JavaScript/axios/axios.html">
+            
+                    
+                    axios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../JavaScript/promise/Promise.html">
+            
+                <a href="../JavaScript/promise/Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../React/">
+            
+                <a href="../React/">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../01-react基础.html">
+            
+                <a href="../01-react基础.html">
+            
+                    
+                    01. React基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../02-react-脚手架使用.html">
+            
+                <a href="../02-react-脚手架使用.html">
+            
+                    
+                    02. React脚手架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../03-react-router-v5.html">
+            
+                <a href="../03-react-router-v5.html">
+            
+                    
+                    03. React-router-v5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../04-react-router-v6.html">
+            
+                <a href="../04-react-router-v6.html">
+            
+                    
+                    04. React-router-v6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../05-redux.html">
+            
+                <a href="../05-redux.html">
+            
+                    
+                    05. redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../06-其他hooks.html">
+            
+                <a href="../06-其他hooks.html">
+            
+                    
+                    06. 其它hooks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../07-虚拟dom和diff算法.html">
+            
+                <a href="../07-虚拟dom和diff算法.html">
+            
+                    
+                    07. 虚拟dom和diff算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../08-react实现国际化.html">
+            
+                <a href="../08-react实现国际化.html">
+            
+                    
+                    08. react实现国际化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../09-@reduxjstoolkit入门.html">
+            
+                <a href="../09-@reduxjstoolkit入门.html">
+            
+                    
+                    09. @reduxjs tool kit入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../移动端适配/重点内容总结.html">
+            
+                <a href="../移动端适配/重点内容总结.html">
+            
+                    
+                    移动端适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../TypeScript/">
+            
+                <a href="../TypeScript/">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../TypeScript/01-TypeScript介绍.html">
+            
+                <a href="../TypeScript/01-TypeScript介绍.html">
+            
+                    
+                    01-TypeScript介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../TypeScript/02-TypeScript基础.html">
+            
+                <a href="../TypeScript/02-TypeScript基础.html">
+            
+                    
+                    02-TypeScript基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../TypeScript/03-TypeScript拓展阅读.html">
+            
+                <a href="../TypeScript/03-TypeScript拓展阅读.html">
+            
+                    
+                    03-TypeScript拓展阅读
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Vue/尚硅谷_Vue全家桶.html">
+            
+                <a href="../Vue/尚硅谷_Vue全家桶.html">
+            
+                    
+                    Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >26-JavaScript正则表达式</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h1 id="javascript&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;regexp">Javascript&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;(RegExp)</h1>
+<h1 id="&#x4EC0;&#x4E48;&#x662F;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;">&#x4EC0;&#x4E48;&#x662F;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</h1>
+<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x89C4;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x68C0;&#x7D22;&#x3001;&#x66FF;&#x6362;&#x7B26;&#x5408;&#x67D0;&#x4E2A;&#x89C4;&#x5219;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x68C0;&#x7D22;&#x6570;&#x636E;&#x548C;&#x66FF;&#x6362;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5E38;&#x89C1;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;</p>
+<ul>
+<li>&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x4E2D;&#x3002;&#x5982;&#xFF1A;&#x5224;&#x65AD;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x6EE1;&#x8DB3;&#x624B;&#x673A;&#x53F7;&#x3001;&#x90AE;&#x7BB1;&#x683C;&#x5F0F;&#x7B49;&#x7B49;&#x3002; </li>
+<li>&#x5728;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x627E;&#x51FA;&#x5305;&#x542B;&#x5339;&#x914D;&#x89C4;&#x5219;&#x7684;&#x5B50;&#x4E32;&#x3002;
+  &#x5982;&#xFF1A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x201C;ab234cd567fg89&#x201D;&#xFF0C;&#x627E;&#x51FA;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8FDE;&#x7EED;&#x7684;&#x6570;&#x5B57;&#x3002;[234,567,89] </li>
+<li>&#x66FF;&#x6362;&#x64CD;&#x4F5C;&#x3002;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x9690;&#x85CF;&#x4E2D;&#x95F4;&#x56DB;&#x4F4D;&#x3002;&#x5982;&#xFF1A;<code>134****4524</code></li>
+<li>...</li>
+</ul>
+<h2 id="&#x5FEB;&#x901F;&#x5165;&#x95E8;">&#x5FEB;&#x901F;&#x5165;&#x95E8;</h2>
+<p>&#x9700;&#x6C42;&#xFF1A;&#x627E;&#x51FA;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x542B;&#x6709;&#x4E09;&#x4E2A;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x5E76;&#x8FD4;&#x56DE;&#x3002;</p>
+<p>&#x5982;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;<code>abc123def456gh89</code>&#xFF0C;&#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#xFF1A;<code>[ &apos;123&apos;, &apos;456&apos; ]</code></p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&apos;abc123def456gh89&apos;</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span> <span class="token comment">// &#x5B9A;&#x4E49;&#x6B63;&#x5219; \d&#x8868;&#x793A;&#x5339;&#x914D;&#x6570;&#x5B57;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x7684;{3}&#x8868;&#x793A;&#x5339;&#x914D;\d&#x4E09;&#x6B21;&#xFF0C;&#x5373;&#x5339;&#x914D;&#x4E09;&#x4E2A;&#x8FDE;&#x7EED;&#x6570;&#x5B57;</span>
+
+<span class="token comment">// &#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;match&#x51FD;&#x6570;&#xFF0C;&#x83B7;&#x53D6;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;</span>
+<span class="token keyword">var</span> result <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [ &apos;123&apos;, &apos;456&apos; ]</span>
+</code></pre>
+<h1 id="&#x6B63;&#x5219;&#x7684;&#x5B9A;&#x4E49;">&#x6B63;&#x5219;&#x7684;&#x5B9A;&#x4E49;</h1>
+<p>&#x5B9A;&#x4E49;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x5B57;&#x9762;&#x91CF;&#x7684;&#x5F62;&#x5F0F;&#x3010;&#x63A8;&#x8350;&#x3011;</li>
+<li>new &#x6784;&#x9020;&#x51FD;&#x6570;&#x65B9;&#x5F0F;&#xFF08;new RegExp()&#xFF09;</li>
+</ul>
+<p>&#x5B57;&#x9762;&#x91CF;&#x7684;&#x5F62;&#x5F0F;&#x521B;&#x5EFA;&#x6B63;&#x5219;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token operator">/</span>pattern<span class="token operator">/</span>flags<span class="token punctuation">;</span>
+</code></pre>
+<p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<p>&#x5176;&#x4E2D;pattern&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C; &#x4E24;&#x4E2A;&#x659C;&#x7EBF;<code>//</code>&#x79F0;&#x4E3A;&#x6B63;&#x5219;&#x7684;&#x5B9A;&#x754C;&#x7B26;,<code>flags</code>&#x5C31;&#x662F;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/RegExp" target="_blank">&#x6807;&#x8BC6;&#x7B26;</a>&#x3002;</p>
+<p>flags&#x5E38;&#x7528;&#x7684;&#x6807;&#x8BC6;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;:</p>
+<ul>
+<li>g&#xFF1A;&#x4EE3;&#x8868;global&#x8868;&#x793A;&#x5168;&#x5C40;&#x6A21;&#x5F0F;&#xFF0C;&#x5373;&#x6B63;&#x5219;&#x5C06;&#x88AB;&#x5E94;&#x7528;&#x4E8E;&#x5339;&#x914D;&#x6574;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E0D;&#x52A0;g&#x4EC5;&#x4F1A;&#x5339;&#x914D;&#x5230;<strong>&#x7B2C;&#x4E00;&#x4E2A;</strong>&#x5C31;&#x4F1A;&#x505C;&#x6B62;&#x5411;&#x540E;&#x5339;&#x914D;&#x3002;</li>
+<li>i&#xFF1A;&#x4EE3;&#x8868;ignore,&#x5339;&#x914D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8868;&#x793A;<strong>&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;</strong>&#x3002;</li>
+</ul>
+<pre class="language-"><code>var reg = /\d{3}a/gi
+</code></pre><h1 id="&#x6B63;&#x5219;&#x8BED;&#x6CD5;&#x548C;&#x6848;&#x4F8B;">&#x6B63;&#x5219;&#x8BED;&#x6CD5;&#x548C;&#x6848;&#x4F8B;</h1>
+<h2 id="&#x539F;&#x5B50;&#x7B26;&#x548C;&#x5143;&#x5B57;&#x7B26;&#x548C;&#x9650;&#x5B9A;&#x7B26;">&#x539F;&#x5B50;&#x7B26;&#x548C;&#x5143;&#x5B57;&#x7B26;&#x548C;&#x9650;&#x5B9A;&#x7B26;</h2>
+<p>&#x76F4;&#x63A5;&#x770B;&#x4E0B;&#x9762;&#x4E00;&#x5F20;&#x56FE;&#x5373;&#x53EF;,&#x57FA;&#x672C;&#x8986;&#x76D6;&#x6211;&#x4EEC;&#x5E73;&#x5E38;&#x5E38;&#x7528;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x8DB3;&#x591F;&#x7528;&#xFF1A;</p>
+<p><img src="../../%E6%B7%B1%E5%9C%B3220731/%E8%B5%84%E6%96%99/%E7%AC%94%E8%AE%B0/assets/1664376006272.png" alt="1664376006272"></p>
+<h3 id="&#x539F;&#x5B50;&#x7B26;&#xFF08;&#x666E;&#x901A;&#x5B57;&#x7B26;&#xFF09;">&#x539F;&#x5B50;&#x7B26;&#xFF08;&#x666E;&#x901A;&#x5B57;&#x7B26;&#xFF09;</h3>
+<p><strong>&#x4EC0;&#x4E48;&#x662F;&#x539F;&#x5B50;&#x7B26;&#xFF1F;</strong></p>
+<p>&#x5C31;&#x662F;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x5355;&#x5143;,&#x4E0D;&#x53EF;&#x5728;&#x5206;&#x5272; &#x76F8;&#x5F53;&#x4E8E;&#x76F4;&#x63A5;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5199;&#x6B7B;&#x7684;&#x56FA;&#x5B9A;&#x503C;&#x3002;</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5199;a&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x5339;&#x914D;a&#xFF1B;&#x5199;1&#x65F6;&#xFF0C;&#x5C31;&#x5339;&#x914D;1&#x3002;</p>
+<p>&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">1a</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="&#x5143;&#x5B57;&#x7B26;">&#x5143;&#x5B57;&#x7B26;</h3>
+<p><strong>&#x4EC0;&#x4E48;&#x662F;&#x5143;&#x5B57;&#x7B26;&#xFF1F;</strong></p>
+<p>&#x6307;&#x542B;&#x6709;<strong>&#x7279;&#x6B8A;&#x542B;&#x4E49;</strong>&#x7684;&#x5B57;&#x7B26;&#xFF0C;</p>
+<p><strong>&#x5E38;&#x89C1;&#x5143;&#x5B57;&#x7B26;</strong>&#xFF1A;</p>
+<ul>
+<li><code>\d</code> :  &#x7B49;&#x4EF7;&#x4E8E;[0-9],&#x5339;&#x914D;0&#x5230;9&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x6570;&#x5B57; &#x683C;&#x5F0F;&#xFF1A; [star-end] &#x5305;&#x62EC;&#x8FB9;&#x754C;start&#x548C;end
+&#x5982;&#xFF1A;<code>[4-9]</code> &#x4EE3;&#x8868;&#x5339;&#x914D;4-9&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x6570;&#x5B57; </li>
+<li><code>\D</code> :&#x4E0E;\d&#x76F8;&#x53CD;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E;<code>[^0-9]</code>,&#x5339;&#x914D;&#x975E;&#x6570;&#x5B57;&#xFF0C;&#x5176;&#x4E2D;&#x7B26;&#x53F7;<code>^</code>&#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x53CD;&#x64CD;&#x4F5C; </li>
+<li><code>\w</code>: &#x7B49;&#x4EF7;&#x4E8E;<code>[0-9a-zA-Z_]</code>,&#x5339;&#x914D;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#x6216;&#x4E0B;&#x5212;&#x7EBF;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A; </li>
+<li><code>\W</code> : &#x4E0E;<code>\w</code>&#x76F8;&#x53CD;&#x5339;&#x914D;&#x4EFB;&#x610F;&#x4E0D;&#x662F;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x6216;&#x4E0B;&#x5212;&#x7EBF;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26; ,&#x7B49;&#x4EF7;&#x4E8E;&#x4E0E; <code>[^0-9a-zA-Z_]</code></li>
+<li><code>\s</code>  : &#x5339;&#x914D;&#x4E0D;&#x53EF;&#x89C1;&#x5B57;&#x7B26;&#xFF0C;&#x5982;&#x7A7A;&#x683C;&#xFF0C;&#x5236;&#x8868;&#x7B26;&#xFF08;tab&#xFF09;&#x7B49; </li>
+<li><code>\S</code>  : &#x4E0E;\s&#x76F8;&#x53CD;&#xFF0C;&#x5339;&#x914D;&#x53EF;&#x89C1;&#x5B57;&#x7B26; </li>
+<li><code>.</code> : &#x70B9;&#x53F7;&#x4EE3;&#x8868;&#x5339;&#x914D;&#x9664;&#x6362;&#x884C;&#x7B26;&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26; (&#x4E07;&#x80FD;&#x5339;&#x914D;) </li>
+</ul>
+<p><strong>&#x5B57;&#x7B26;&#x7EC4;&#xFF1A;</strong></p>
+<p>&#x4F7F;&#x7528;&#x7B26;&#x53F7;<code>[]</code>&#x62EC;&#x8D77;&#x6765;&#x7684;&#x90E8;&#x5206;&#x79F0;&#x4E3A;&#x5B57;&#x7B26;&#x7EC4;&#x3002;&#x4E5F;&#x53EA;&#x80FD;&#x5339;&#x914D;&#x5B57;&#x7B26;&#x7EC4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<ul>
+<li><code>[3-9]</code>:&#x5339;&#x914D;&#x6570;&#x5B57;3&#x5230;9&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E; [3456789]&#x3002;&#x53EA;&#x6709;&#x6570;&#x5B57;&#x662F;&#x8FDE;&#x7EED;&#x7684;&#x624D;&#x53EF;&#x4EE5;&#x7528;<code>-</code>&#x7B80;&#x5199;</li>
+<li><code>[abc]</code>&#xFF1A; &#x4EE3;&#x8868;&#x5339;&#x914D;&#x5B57;&#x6BCD;abc&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#xFF0C;&#x7B49;&#x4EF7;&#x4E8E;[a-c]</li>
+<li><code>[^5-9]</code> &#xFF1A;&#x8868;&#x793A;&#x5339;&#x914D;&#x6570;&#x5B57;5&#x5230;9&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;</li>
+<li><code>[^abc]&#xFF1A;</code>&#x7B49;&#x4EF7;&#x4E8E;<code>[^a-c]</code> &#x5339;&#x914D;&#x9664;&#x4E86;abc&#x8FD9;&#x51E0;&#x4E2A;&#x5B57;&#x6BCD;&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x610F;&#x5B57;&#x7B26;&#xFF0C;&#x7B26;&#x53F7;<code>^</code>&#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x53CD;</li>
+<li><code>[0-9a-c]</code>&#xFF1A; &#x5339;&#x914D;&#x6570;&#x5B57;0&#x5230;9&#xFF0C;a&#x5230;c&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x3002;</li>
+<li><code>[\dX]</code>&#xFF1A; &#x5339;&#x914D;&#x6570;&#x5B57;0&#x5230;9&#xFF0C;&#x6216;&#x5B57;&#x6BCD;X&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x3002;</li>
+<li><code>[\u4e00-\u9fa5]</code>; &#x5339;&#x914D;&#x5355;&#x4E2A;&#x4E2D;&#x6587;</li>
+</ul>
+<blockquote>
+<p> &#x6CE8;&#x610F;&#xFF1A;&#x539F;&#x5B50;&#x7B26;&#x6216;&#x5B57;&#x7B26;&#x7EC4;&#x4EC5;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x503C;&#x3002;&#x8981;&#x5339;&#x914D;&#x591A;&#x4E2A;&#x9700;&#x8981;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x9650;&#x5B9A;&#x7B26;&#x6765;&#x5B9E;&#x73B0;</p>
+</blockquote>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">
+      <span class="token comment">//  &#x7F16;&#x5199;&#x6B63;&#x5219;</span>
+      <span class="token comment">// var reg = /[^5-9]/g // &#x5339;&#x914D;&#x9664; 5-9&#x4E4B;&#x5916;&#x4EFB;&#x610F;&#x5B57;&#x7B26;</span>
+      <span class="token comment">// var reg = /\w/g // &#x7B49;&#x4EF7;&#x4E8E; /[a-z0-9A-Z_]/g</span>
+      <span class="token comment">// var reg = /[a-f3-8]/g // a-f 3-8&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;</span>
+      <span class="token comment">// var reg = /[A-C4-7]/g //</span>
+      <span class="token comment">// var reg = /[a-c5-9l-n]/g //</span>
+      <span class="token comment">// var reg = /\W/gi // &#x7B49;&#x4EF7;&#x4E8E; /[^0-9a-zA-Z_]/gi</span>
+      <span class="token comment">// var reg = /\s/g // &#x5339;&#x914D;&#x4E0D;&#x53EF;&#x89C1;&#x5B57;&#x7B26;</span>
+      <span class="token comment">// var reg = /\S/g // &#x5339;&#x914D;&#x53EF;&#x89C1;&#x5B57;&#x7B26;</span>
+      <span class="token comment">// var reg = /./g // &#x4E07;&#x80FD;&#x5339;&#x914D;&#xFF0C;&#x9664;&#x4E86;&#x6362;&#x884C;&#x7B26;</span>
+      <span class="token comment">// var reg = /[a-cY]/g //</span>
+      <span class="token comment">// var reg = /[1-5]/g //</span>
+      <span class="token comment">// var reg = /[\dabc]/g // &#x5339;&#x914D; 0-9 &#x6216; a-c&#x4E2D;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;</span>
+      <span class="token comment">// var reg = /[\d][abc]/g //</span>
+      <span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\dX]</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span> <span class="token comment">//&#x5339;&#x914D;&#x8EAB;&#x4EFD;&#x8BC1;&#x540E;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4EFD;</span>
+
+      <span class="token comment">// &#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;</span>
+      <span class="token keyword">var</span> result <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="&#x9650;&#x5B9A;&#x7B26;&#x91CF;&#x8BCD;">&#x9650;&#x5B9A;&#x7B26;(&#x91CF;&#x8BCD;)</h3>
+<p>&#x53EF;&#x4EE5;&#x9650;&#x5B9A;&#x5339;&#x914D;&#x7684;<strong>&#x6570;&#x91CF;</strong>&#x3002;</p>
+<p>&#x5982;&#xFF1A;</p>
+<ul>
+<li>+: &#x5339;&#x914D; 1 &#x4E2A;&#x6216;&#x591A;&#x4E2A;, &#x5373; &gt;=1</li>
+<li>*: &#x5339;&#x914D; 0 &#x4E2A;&#x6216;&#x591A;&#x4E2A;&#xFF0C; &#x5373;&gt;=0</li>
+<li>?: &#x5339;&#x914D; 0 &#x4E2A;&#x6216;1&#x4E2A;&#xFF0C; &#x5373;  &gt;=0, &#x4E14;  &lt;=1</li>
+<li>{3}: &#x5339;&#x914D;3&#x6B21;</li>
+<li>{3,}: &#x6700;&#x5C11;&#x5339;&#x914D;3&#x6B21;&#xFF0C; &#x5373; &gt;=3</li>
+<li>{3,6}: &#x6700;&#x5C11;3&#x6B21;&#xFF0C;&#x6700;&#x591A;6&#x6B21;&#xFF0C;  &#x5373; &gt;=3 &#x4E14; &lt;=6</li>
+</ul>
+<p>&#x4F8B;1&#xFF1A;&#x5339;&#x914D;&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;http&#x6216;https&#x7684;&#x5B50;&#x4E32;&#x3002;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token comment">// s&#x5B57;&#x7B26;&#x53EF;&#x6709;&#x53EF;&#x65E0;</span>
+<span class="token keyword">var</span> str <span class="token operator">=</span>  <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">https?</span><span class="token regex-delimiter">/</span></span>
+</code></pre>
+<pre class="language-"><code>// &#x662F;&#x628A;&#x6700;&#x5DE6;&#x8FB9;&#x7D27;&#x6328;&#x89C4;&#x5219;&#x91CD;&#x590D;&#x591A;&#x6B21;
+let reg = /[a-z]\d{2}/g; // &#x7B49;&#x4EF7;&#x4E8E; /[a-z]\d\d/g
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x5728;js&#x4E2D;&#x91CF;&#x8BCD;&#x9ED8;&#x8BA4;&#x662F;&#x8D2A;&#x5A6A;&#x5339;&#x914D;&#xFF1A;</p>
+<p>&#x5982;&#xFF1A;{min-max},&#x4F1A;&#x5339;&#x914D;&#x6700;&#x5927;&#x503C;max&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x60F3;&#x8D2A;&#x5A6A;&#x5339;&#x914D;&#x53EF;&#x4EE5;&#x5728;&#x91CF;&#x8BCD;&#x540E;&#x9762;&#x52A0;&#x4E2A;&#x95EE;&#x53F7;<code>?</code>&#x8F6C;&#x4E3A;&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#xFF0C;&#x5982;&#xFF1A;{min-max}? &#x5C31;&#x4F1A;&#x5339;&#x914D;min&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+<p>&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#x57FA;&#x672C;&#x4E0D;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x771F;&#x8981;&#x5339;&#x914D;&#x6700;&#x5C0F;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x76F4;&#x63A5;{min}&#x5373;&#x53EF;&#x3002;&#x8FD9;&#x6837;&#x66F4;&#x76F4;&#x89C2;&#xFF0C;&#x5982;<code>\d{3}</code>,&#x5339;&#x914D;&#x4E09;&#x4E2A;&#x6570;&#x5B57;&#x3002;</p>
+<pre class="language-"><code> let reg = /\d{2,5}?/g //  &#x8F6C;&#x6362;&#x4E3A;&#x975E;&#x8D2A;&#x5A6A;&#x5339;&#x914D;&#xFF1A;&#x5728;&#x91CF;&#x8BCD;&#x540E;&#x9762;&#x52A0;&#x4E00;&#x4E2A;&#xFF1F;&#x53F7;. &#x5EFA;&#x8BAE; /\d{2}/g
+</code></pre><p>&#x6848;&#x4F8B;&#xFF1A;&#x5339;&#x914D;&#x624B;&#x673A;&#x53F7;</p>
+<p>&#x4E24;&#x4E2A;&#x6B63;&#x5219;&#x76F8;&#x5173;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<ul>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match" target="_blank">str.match(reg)</a>&#xFF1B; &#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code class="lang-javascript">  <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&apos;123abc456def&apos;</span>
+  <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// [ &apos;123&apos;, &apos;456&apos; ]</span>
+</code></pre>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test" target="_blank">reg.test(str)</a>;  &#x68C0;&#x6D4B;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x6B63;&#x5219;,&#x6EE1;&#x8DB3;&#x8FD4;&#x56DE;true,&#x5426;&#x5219;false</p>
+<pre class="language-"><code class="lang-javascript">  <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span><span class="token regex-flags">i</span></span>
+  <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&apos;qd123abc456&apos;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x8F6C;&#x4E49;&#x5B57;&#x7B26;">&#x8F6C;&#x4E49;&#x5B57;&#x7B26;</h2>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x5728;&#x6B63;&#x5219;&#x4E2D;&#x5339;&#x914D;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x9700;&#x8981;&#x8F6C;&#x4E49;&#xFF0C;&#x5426;&#x5219;&#x5339;&#x914D;&#x4E0D;&#x5230;&#xFF0C;&#x5982;&#x5339;&#x914D;&#x7B26;&#x53F7;<code>? ( ) + * . \ /</code>&#x7B49;&#x7279;&#x6B8A;&#x7B26;&#x53F7;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x5176;&#x524D;&#x9762;&#x52A0;&#x4E2A;&#x53CD;&#x659C;&#x6760;<code>\</code>&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002;</p>
+<p>&#x5982;&#xFF1A;</p>
+<p>&#x5339;&#x914D;&#x70B9;&#x53F7; <code>\.</code></p>
+<p>&#x5339;&#x914D;<em>&#x53F7; `\</em>`</p>
+<p>&#x5339;&#x914D;&#x4E00;&#x5BF9;&#x5C0F;&#x62EC;&#x53F7; <code>\(\)</code></p>
+<p>&#x5339;&#x914D;&#x52A0;&#x53F7;+  <code>\+</code></p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5BF9;&#x4E8E;&#x6709;&#x4E9B;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x5982;@ - _&#x7B49;&#x5B57;&#x7B26;&#x4E0D;&#x9700;&#x8981;&#x8F6C;&#x4E49;&#x4E5F;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x5230;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x90FD;&#x52A0;&#x4E0A;&#x53CD;&#x659C;&#x6760;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x4E60;&#x60EF;&#xFF0C;&#x53EF;&#x9632;&#x6B62;&#x9519;&#x8BEF;&#x3002;</p>
+</blockquote>
+<pre class="language-"><code class="lang-javascript">
+<span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">.</span><span class="token regex-delimiter">/</span><span class="token regex-flags">gi</span></span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+<span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\(\)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+<span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\@\-\_\?</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+</code></pre>
+<h2 id="&#x5339;&#x914D;&#x6B63;&#x5219;&#x7684;&#x5F00;&#x59CB;&#xFF08;&#xFF09;&#x548C;&#x7ED3;&#x5C3E;">&#x5339;&#x914D;&#x6B63;&#x5219;&#x7684;&#x5F00;&#x59CB;&#xFF08;^&#xFF09;&#x548C;&#x7ED3;&#x5C3E;($)</h2>
+<p><code>/^&#x6B63;&#x5219;/</code>&#xFF1A; &#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x4EE5;&#x6307;&#x5B9A;&#x7684;&#x6B63;&#x5219;<strong>&#x5F00;&#x5934;</strong>&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;</p>
+<p><code>/&#x6B63;&#x5219;$/</code>&#xFF1A;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x4EE5;&#x6307;&#x5B9A;&#x7684;&#x6B63;&#x5219;<strong>&#x7ED3;&#x5C3E;</strong>&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;</p>
+<p><code>/^&#x6B63;&#x5219;$/</code>&#xFF1A;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#x4EE5;&#x6307;&#x5B9A;&#x7684;&#x6B63;&#x5219;<strong>&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x5C3E;</strong>&#x8FDB;&#x884C;&#x5339;&#x914D;&#x3002;</p>
+<blockquote>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;/^ /&#x548C;<code>[^5-8]</code>&#x7684;&#x533A;&#x522B;&#xFF1A;</p>
+<p>/^ /&#xFF1A;&#x5199;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6700;&#x524D;&#x9762;&#xFF0C;&#x4EE5;&#x6EE1;&#x8DB3;&#x67D0;&#x4E2A;&#x5339;&#x914D;&#x89C4;&#x5219;&#x5F00;&#x5934;,</p>
+<p><sup><a href="#fn_5-8" id="reffn_5-8">5-8</a></sup> : &#x4E2D;&#x62EC;&#x53F7;^&#x7B26;&#x53F7;&#x662F;&#x53D6;&#x53CD;&#xFF08;&#x76F8;&#x53CD;&#xFF09;&#x7684;&#x610F;&#x601D;</p>
+</blockquote>
+<p>&#x4F8B;1&#xFF1A;&#x627E;&#x5230;&#x4EE5;<strong>http</strong>&#x6216;https&#x5F00;&#x5934;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<p>&#x4F8B;2&#xFF1A;&#x627E;&#x5230;&#x4EE5;<strong>.com</strong>&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x5C3E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<p>&#x4F8B;3&#xFF1A; &#x627E;&#x5230;&#x57DF;&#x540D;&#x4EE5;<strong>http&#x6216;https&#x5F00;&#x5934;</strong>&#xFF0C;&#x4E14;&#x4EE5;<code>.com</code>&#x7ED3;&#x5C3E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<pre class="language-"><code class="lang-javascript">    <span class="token keyword">let</span> domain1 <span class="token operator">=</span> <span class="token string">&apos;http://taobao.cn&apos;</span>
+    <span class="token keyword">let</span> domain2 <span class="token operator">=</span> <span class="token string">&apos;https://taobao.comcn&apos;</span>
+    <span class="token keyword">let</span> domain3 <span class="token operator">=</span> <span class="token string">&apos;ftpshttps://taobao.com&apos;</span>
+    <span class="token keyword">let</span> domain4 <span class="token operator">=</span> <span class="token string">&apos;https://taobao.com&apos;</span>
+
+    <span class="token comment">// &#x4F8B;1&#xFF1A;&#x627E;&#x5230;&#x4EE5;http&#x6216;https&#x5F00;&#x5934;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
+    <span class="token keyword">let</span> reg1 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^https?</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+    <span class="token comment">// console.log(reg.test(domain1)); // true</span>
+    <span class="token comment">// console.log(reg.test(domain2)); // true</span>
+    <span class="token comment">// console.log(reg.test(domain3)); // false</span>
+
+    <span class="token comment">//  &#x4F8B;2&#xFF1A;&#x627E;&#x5230;&#x4EE5;.com&#x5B57;&#x7B26;&#x4E32;&#x7ED3;&#x5C3E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
+    <span class="token keyword">let</span> reg2 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.com$</span><span class="token regex-delimiter">/</span></span>
+    <span class="token comment">// console.log(reg2.test(domain1)); // false</span>
+    <span class="token comment">// console.log(reg2.test(domain2)); // false</span>
+    <span class="token comment">// console.log(reg2.test(domain3)); // true</span>
+
+    <span class="token comment">//  &#x4F8B;3&#xFF1A;&#x627E;&#x5230;&#x57DF;&#x540D;&#x4EE5;http&#x6216;https&#x5F00;&#x5934;&#xFF0C;&#x4E14;&#x4EE5;.com&#x7ED3;&#x5C3E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
+    <span class="token keyword">let</span> reg3 <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^https?.+\.com$</span><span class="token regex-delimiter">/</span></span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg3<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>domain1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg3<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>domain2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg3<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>domain3<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg3<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>domain4<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre>
+<h2 id="&#x6216;&#x8FD0;&#x7B97;">&#x6216;&#x8FD0;&#x7B97;|</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x53EA;&#x8981;&#x6EE1;&#x8DB3;&#x7AD6;&#x7EBF;<code>|</code>&#x5DE6;&#x8FB9;&#x6216;&#x53F3;&#x8FB9;&#x7684;&#x89C4;&#x5219;&#x5373;&#x7B97;&#x5339;&#x914D;&#x5230;&#x3002;</p>
+<p>&#x4F8B;1&#xFF1A;&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;nodejs&#x6216;java&#x3002;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">nodejs|java</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x4F8B;2&#xFF1A;&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;vue&#x6216;javascript&#x6216;css&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">vue|javascript|css</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x63A8;&#x8350;&#x4E00;&#x4E2A;&#x6B63;&#x5219;&#x53EF;&#x89C6;&#x5316;&#x56FE;&#x5F62;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x4EE5;&#x56FE;&#x50CF;&#x5316;&#x7684;&#x65B9;&#x5F0F;&#x66F4;&#x76F4;&#x89C2;&#x53BB;&#x7406;&#x89E3;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<p>&#x5728;&#x7EBF;&#x7F51;&#x5740;&#xFF1A; <a href="https://regexper.com/" target="_blank">https://regexper.com/</a></p>
+<h2 id="&#x6574;&#x4F53;&#x5339;&#x914D;&#xFF08;&#x5206;&#x7EC4;&#xFF09;">&#x6574;&#x4F53;&#x5339;&#x914D;&#xFF08;&#x5206;&#x7EC4;&#xFF09;</h2>
+<p>&#x8BED;&#x6CD5;&#xFF1A;<code>&#xFF08;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</code>&#xFF09;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#xFF1A;&#x5982;<code>&#xFF08;abc){2}</code>,&#x4EE3;&#x8868;&#x628A;abc&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5206;&#x7EC4;&#x6765;&#x5339;&#x914D;&#x4E24;&#x6B21;&#x3002;</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+      var str = &apos;abc34abc434abc123&apos;
+
+      // &#x5339;&#x914D;&#x8FDE;&#x7EED;&#x7684;abc&#x5B57;&#x7B26;
+      var reg = /(abc\d)+/g
+
+      console.log(str.match(reg))
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre><h2 id="&#x5339;&#x914D;&#x5355;&#x8BCD;&#x8FB9;&#x754C;b">&#x5339;&#x914D;&#x5355;&#x8BCD;&#x8FB9;&#x754C;\b</h2>
+<p>&#x6B63;&#x5219;&#xFF1A;<code>\b</code> &#xFF0C;&#x5339;&#x914D;&#x5355;&#x8BCD;&#x7684;&#x8FB9;&#x754C;&#x3002;\b&#x5339;&#x914D;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x4E00;&#x822C;&#x4F4D;&#x4E8E;&#x884C;&#x9996;&#x3001;&#x884C;&#x5C3E;&#x6216;&#x7A7A;&#x683C;&#x65C1;&#x8FB9;&#x7684;&#x5B57;&#x7B26;&#x90FD;&#x79F0;&#x4E3A;&#x8FB9;&#x754C;&#x4F4D;&#x7F6E;&#x90E8;&#x5206;&#x3002;</p>
+<p>var str = &quot;i have a dream&quot;</p>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x4E3B;&#x8981;&#x5E94;&#x7528;&#x4E8E;&#x5339;&#x914D;&#x5355;&#x8BCD;&#x8F83;&#x591A;&#x3002;</p>
+<p>&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">    <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;I have a dream&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\b\w+\b</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span>
+    <span class="token comment">//&#x83B7;&#x53D6;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//[&quot;I&quot;, &quot;have&quot;, &quot;a&quot;, &quot;dream&quot;]</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5355;&#x8BCD;&#x8FB9;&#x754C;&#xFF0C;&#x5BF9;&#x4E2D;&#x6587;&#x7B49;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x662F;&#x65E0;&#x6548;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;&#x516B;&#x6212; &#x609F;&#x7A7A; hello &#x6C99;&#x50E7;&apos;</span><span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\b\w+\b</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [ &apos;hello&apos;,]</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&apos;&#x516B;&#x6212; &#x609F;&#x7A7A; hello &#x6C99;&#x50E7;&apos;</span><span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\b&#x609F;&#x7A7A;\b</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// null</span>
+</code></pre>
+<p>&#x5339;&#x914D;DOM&#x8282;&#x70B9;&#x7C7B;&#x540D;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>box<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>abc def xyz<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x6211;&#x662F;&#x4E00;&#x4E2A;&#x76D2;&#x5B50;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+//  &#x83B7;&#x53D6;dom&#x8282;&#x70B9;&#x7684;&#x7C7B;&#x540D;
+var box = document.getElementById(&apos;box&apos;)
+// &#x83B7;&#x53D6;&#x7C7B;&#x540D;
+var boxClassNames = box.className
+
+console.log(boxClassNames.match(reg)) // [abc,def,xyz]
+</code></pre>
+<h2 id="&#x6B63;&#x5219;&#x6848;&#x4F8B;">&#x6B63;&#x5219;&#x6848;&#x4F8B;</h2>
+<p>&#x5199;&#x6B63;&#x5219;&#x7684;&#x601D;&#x8DEF;&#x3010;&#x91CD;&#x8981;&#x3011;&#xFF1A;</p>
+<ol>
+<li>&#x5148;&#x641E;&#x6E05;&#x695A;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6709;&#x54EA;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x683C;&#x5F0F;&#x5148;&#x5217;&#x4E3E;&#x51FA;&#x6765;?</li>
+<li><p>&#x6839;&#x636E;&#x683C;&#x5F0F;&#x7279;&#x70B9;&#x53BB;&#x5199;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x7EA6;&#x675F;&#x3002;</p>
+</li>
+<li><p>&#x624B;&#x673A;&#x53F7;&#x6B63;&#x5219;    /^1[3-9]\d{9}$/ 
+```</p>
+</li>
+</ol>
+<p>13111122221
+18111122221
+&#x89C2;&#x5BDF;&#x683C;&#x5F0F;&#xFF1A;&#x5F97;&#x51FA;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x4F4D;&#x662F;&#x56FA;&#x5B9A;1</li>
+<li>&#x7B2C;&#x4E8C;&#x4F4D;[3-9]</li>
+<li><p>&#x5269;&#x4E0B;9&#x4F4D;&#x90FD;&#x662F;&#x7EAF;&#x6570;&#x5B57;</p>
+<p>  var reg = /^1[3-9]\d{9}$/;</p>
+</li>
+</ul>
+<p>&#x89C2;&#x5BDF;&#x683C;&#x5F0F;&#xFF1A;&#x5F97;&#x51FA;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x4F4D;&#x662F;&#x56FA;&#x5B9A;1</li>
+<li>&#x7B2C;&#x4E8C;&#x4F4D;[3-9]</li>
+<li><p>&#x5269;&#x4E0B;9&#x4F4D;&#x90FD;&#x662F;&#x7EAF;&#x6570;&#x5B57;</p>
+<p>var reg = /^1[3-9]\d{9}$/;
+```</p>
+</li>
+</ul>
+<ul>
+<li>qq&#x53F7;&#x6B63;&#x5219;
+1.&#x5206;&#x6790;&#x7279;&#x70B9;   a.&#x7EAF;&#x6570;&#x5B57; b. 6-11&#x4F4D;
+2.&#x6839;&#x636E;&#x7279;&#x70B9;&#x5199;&#x6B63;&#x5219;     var reg =  /^d{6,11}$/g; </li>
+<li>&#x90AE;&#x653F;&#x7F16;&#x7801;
+var reg = /^\d{6}$/ </li>
+<li>&#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#x6B63;&#x5219; <ul>
+<li>1.&#x7279;&#x70B9;&#xFF1A;   a.18&#x4F4D;     b.&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x662F;&#x6570;&#x5B57;&#x6216;&#x662F;X
+```javascript
+//qq&#x53F7;&#xFF1A;
+var reg = /^\d{6,12}$/</li>
+</ul>
+</li>
+</ul>
+<p>console.log(reg.test(&apos;123456&apos;)) // true
+console.log(reg.test(&apos;12345&apos;)) // false
+console.log(reg.test(&apos;66668888&apos;)) // true
+console.log(reg.test(&apos;1259524356345&apos;)) // false</p>
+<p>// &#x90AE;&#x7F16;&#xFF1A;6&#x4F4D;&#x7EAF;&#x6570;&#x5B57;
+var reg2 = /^\d{6}$/
+console.log(reg2.test(500800)) // true
+console.log(reg2.test(5008001)) // false</p>
+<p>// &#x8EAB;&#x4EFD;&#x8BC1;&#xFF1A;1&#x3001;18&#x4F4D;   2. &#x524D;17&#x4F4D;&#x90FD;&#x662F;&#x6570;&#x5B57;&#xFF0C;&#x6700;&#x540E;1&#x4F4D;&#x662F;&#x6570;&#x5B57;&#x6216;&#x5927;&#x5199;&#x5B57;&#x6BCD;X
+var reg3 = /^\d{17}[\dX]$/i
+console.log(reg3.test(&apos;360481189905061120&apos;))
+console.log(reg3.test(&apos;36048118990506112x&apos;)) // false
+console.log(reg3.test(&apos;36048118990506112X&apos;))</p>
+<pre class="language-"><code>
+-   6&#xFF5E;18&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x53EF;&#x4F7F;&#x7528;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x3001;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x9700;&#x8981;&#x4EE5;&#x5B57;&#x6BCD;&#x5F00;&#x5934;
+</code></pre><pre class="language-"><code>  var reg = /^[a-zA-Z]\w{5,17}$/i
+
+  console.log(reg.test(&apos;ggsd1_fd&apos;)) // true
+  console.log(reg.test(&apos;ggsd1-fd&apos;)) // false
+  console.log(reg.test(&apos;1ggsd1fd&apos;)) // false
+  console.log(reg.test(&apos;ggsd1fdhdhgfdyeryrtetert&apos;)) // false
+</code></pre><pre class="language-"><code>
+
+
+- &#x7535;&#x5B50;&#x90AE;&#x7BB1;&#x6B63;&#x5219; 
+
+
+&#x4EE5;&#x90AE;&#x7BB1;&#x4E3A;&#x4F8B;&#xFF1A;
+
+`52345235@qq.com`
+
+`mfdf_anfdg6656fai@163.com`
+
+`fa545dfaf@gmail.com`
+
+`wangwei@atguigu.com`
+
+`fad3232@yoo.com.cn`
+
+&#x5206;&#x6790;&#xFF1A;
+
+- @&#x5DE6;&#x8FB9;&#xFF1A; &#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x591A;&#x4E2A; &#x3002;
+- @&#x672C;&#x8EAB;&#xFF1A; &#x5339;&#x914D;@
+- @&#x53F3;&#x8FB9;&#xFF1A;&#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#xFF0C;&#x591A;&#x4E2A;&#xFF0C;&#x5728;&#x5339;&#x914D;&#x7279;&#x6B8A;&#x7B26;&#x53F7;`.`,&#x540E;&#x9762;&#x8DDF;&#x7740;&#x662F;&#x7EAF;&#x5B57;&#x6BCD;2&#x5230;5&#x4F4D;
+
+&#x6CE8;&#x610F;&#xFF1A;&#x96C5;&#x864E;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#xFF0C;&#x5982;&#x4F55;&#x5339;&#x914D;&#xFF0C;&#x628A;`yoo.`&#x6216;`com.`&#x5F53;&#x505A;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x6765;&#x770B;&#x5F85;&#xFF0C;&#x8FD9;&#x4E2A;&#x6574;&#x4F53;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x6216;&#x591A;&#x6B21;&#x3002;
+</code></pre><pre class="language-"><code>  // fdsfsdfs@qq.com
+  // gdg4234_fdfg35@163.fsdfsdfsd
+  // gdg42dfd@gmail.com
+  // wangwei@atguigu.cn
+  // gsfgs@yoo.com.cn
+
+  var reg = /^\w+@(\w+\.)+[a-zA-Z]+$/i
+
+  console.log(reg.test(&apos;123456@qq.com&apos;)) // true
+  console.log(reg.test(&apos;123-456@qq.com&apos;)) // false
+  console.log(reg.test(&apos;123456qq.com&apos;)) // false
+  console.log(reg.test(&apos;123456@qqcom&apos;)) // false
+  console.log(reg.test(&apos;1fsdf_23456@163.com&apos;)) // true
+  console.log(reg.test(&apos;gsfgs@yoo.com.cn&apos;)) // true
+</code></pre><pre class="language-"><code>
+
+
+## &#x6B63;&#x5219;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;
+
+&#x6B63;&#x5219;Regexp&#x7684;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x5177;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x53D6;&#x5F97;&#x6709;&#x5173;&#x6B63;&#x5219;&#x6A21;&#x5F0F;&#x7684;&#x5404;&#x79CD;&#x4FE1;&#x606F;&#x3002;
+
+- `lastIndex`&#xFF1A;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x5168;&#x5C40;&#x5339;&#x914D;&#x65F6;&#x6807;&#x8BB0;&#x4E0B;&#x4E00;&#x6B21;&#x5339;&#x914D;&#x5F00;&#x59CB;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4ECE;&#x4E0B;&#x6807;0&#x627E;&#x8D77;&#x3002;&#x975E;&#x5168;&#x5C40;&#x5219;&#x59CB;&#x7EC8;&#x4ECE;0&#x5F00;&#x59CB;&#x3002;
+- source&#x5C5E;&#x6027;&#x3002;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x5B58;&#x50A8;&#x6B63;&#x5219;&#x6A21;&#x5F0F;&#x7684;&#x4E3B;&#x4F53;&#x3002;&#x6BD4;&#x5982;/abc/gi&#x4E2D;&#x7684;abc&#x3002;
+- &#x5BF9;&#x5E94;&#x7684;&#x4FEE;&#x9970;&#x7B26;&#x5C5E;&#x6027;&#x3002;&#x76EE;&#x524D;&#x6709;global&#x3001;ignoreCase&#x3001;multiline&#x3001;sticky&#x3001;dotAll&#x3001;unicode&#x5C5E;&#x6027;&#xFF0C;&#x8FD4;&#x56DE;&#x5E03;&#x5C14;&#x503C;&#x8868;&#x660E;&#x662F;&#x5426;&#x5F00;&#x542F;&#x5BF9;&#x5E94;&#x4FEE;&#x9970;&#x7B26;&#x3002;
+- flags&#x5C5E;&#x6027;&#x3002;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x7684;&#x4FEE;&#x9970;&#x7B26;&#x3002;
+
+&gt; &#x6CE8;&#x610F;&#xFF1A;&#x4EE5;&#x4E0A;&#x5C5E;&#x6027;&#x90FD;&#x4E3A;&#x53EA;&#x8BFB;&#xFF0C;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;&#x3002;
+
+
+
+## &#x5168;&#x5C40;&#x5339;&#x914D;&#x6807;&#x8BC6;&#x7B26;g&#x548C;lastIndex
+
+
+- &#x52A0;&#x6807;&#x8BC6;g&#x3002; &#x9ED8;&#x8BA4;&#x4ECE;&#x4E0B;&#x6807;0&#x5F00;&#x59CB;&#x5339;&#x914D;&#x3002;lastIndex&#x503C;&#x4F1A;&#x4E0D;&#x505C;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x6B63;&#x5219;&#x4F1A;&#x57FA;&#x4E8E;&#x6B64;&#x503C;&#x5728;&#x5F80;&#x540E;&#x5339;&#x914D;&#xFF0C;&#x5339;&#x914D;&#x5931;&#x8D25;&#x540E;&#x91CD;&#x7F6E;&#x4E3A;0.
+
+```javascript
+var str = &quot;abc24fsdf234f56&quot;
+var reg = /\d{2}/g;
+console.log( reg.lastIndex ) // 0  &#x9ED8;&#x8BA4;&#x4E0B;&#x6807;&#x4E3A;0&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5F00;&#x59CB;&#x5F80;&#x540E;&#x5339;&#x914D;
+console.dir( reg.test(str) ) // true
+
+console.log( reg.lastIndex ) // 5 &#x4F1A;&#x57FA;&#x4E8E;&#x4E0A;&#x4E00;&#x6B21;&#x5339;&#x914D;&#x5230;&#x7684;lastIndex&#x7EE7;&#x7EED;&#x5F80;&#x540E;&#x5339;&#x914D;
+console.dir( reg.test(str) ) // true
+
+console.log( reg.lastIndex ) // 11
+console.dir( reg.test(str) ) // true
+
+console.log( reg.lastIndex ) // 15
+console.dir( reg.test(str) ) // false
+
+console.log( reg.lastIndex ) // 0 &#x5339;&#x914D;&#x5931;&#x8D25;&#x540E;&#xFF0C;&#x4F1A;&#x628A;&#x4E0B;&#x6807;lastIndex&#x91CD;&#x7F6E;&#x4E3A;0
+console.dir( reg.test(str) ) // true
+
+
+console.log( reg.lastIndex ) // 5 &#x5728;&#x91CD;&#x590D;&#x4E0A;&#x9762;&#x7684;&#x6B65;&#x9AA4;
+console.dir( reg.test(str) ) // true
+</code></pre><ul>
+<li>&#x4E0D;&#x52A0;&#x6807;&#x8BC6;g&#x3002; lastIndex&#x59CB;&#x7EC8;&#x4ECE;0&#x7684;&#x4F4D;&#x7F6E;&#x5F80;&#x540E;&#x5339;&#x914D;.</li>
+</ul>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&quot;abc24fsdf234f56&quot;</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> reg<span class="token punctuation">.</span>lastIndex <span class="token punctuation">)</span> <span class="token comment">// 0  </span>
+console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span> reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token comment">// true</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> reg<span class="token punctuation">.</span>lastIndex <span class="token punctuation">)</span> <span class="token comment">// 0  </span>
+console<span class="token punctuation">.</span><span class="token function">dir</span><span class="token punctuation">(</span> reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token comment">// true</span>
+</code></pre>
+<p>&#x7ED3;&#x8BBA;&#xFF1A; &#x4F55;&#x65F6;&#x52A0;g?</p>
+<ul>
+<li>&#x4E0D;&#x9700;&#x8981;&#x52A0;g&#x60C5;&#x51B5;&#xFF1A;&#x5F53;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x6B63;&#x5219;&#x7684;&#x65F6;&#x5019;&#x3002;&#x5373;&#x7ED3;&#x679C;&#x662F;true&#x6216;false&#x7684;&#x60C5;&#x51B5;&#x3002;&#x4E00;&#x822C;&#x591A;&#x7528;&#x4E8E;&#x6B63;&#x5219;&#x7684;test&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0D;&#x9700;&#x8981;&#x52A0;g&#x3002;</li>
+<li>&#x8981;&#x52A0;g&#x60C5;&#x51B5;&#x3002;&#x5F53;&#x8981;&#x83B7;&#x53D6;&#x6B63;&#x5219;&#x5339;&#x914D;&#x6240;&#x6709;&#x7ED3;&#x679C;&#x7684;&#x65F6;&#x5019;&#x3002;&#x4E00;&#x822C;&#x7528;&#x4E8E;&#x5982; str.match() &#x3001; str.replace() &#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x8981;&#x52A0;g</li>
+</ul>
+<h2 id="&#x6355;&#x83B7;&#x7EC4;&#x548C;&#x53CD;&#x5411;&#x5F15;&#x7528;">&#x6355;&#x83B7;&#x7EC4;&#x548C;&#x53CD;&#x5411;&#x5F15;&#x7528;</h2>
+<p><strong>&#x4EC0;&#x4E48;&#x662F;&#x6355;&#x83B7;&#x7EC4;&#xFF1F;</strong></p>
+<p>&#x7B54;&#xFF1A;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x5C0F;&#x62EC;&#x53F7;<strong>()</strong>&#x62EC;&#x8D77;&#x6765;&#x7684;&#x90E8;&#x5206;&#x79F0;&#x4E4B;&#x4E3A;&#x6355;&#x83B7;&#x7EC4;&#xFF08;&#x5206;&#x7EC4;&#xFF09;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code>&#xFF08;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF09;
+</code></pre><p>&#x6355;&#x83B7;&#x7EC4;&#x7684;&#x4F5C;&#x7528;&#xFF1A;</p>
+<ul>
+<li>&#x628A;&#x67D0;&#x4E9B;&#x6B63;&#x5219;&#x5F53;&#x6574;&#x4F53;&#x5339;&#x914D;</li>
+<li>&#x5BF9;&#x6355;&#x83B7;&#x7EC4;&#x5339;&#x914D;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x53CD;&#x5411;&#x5F15;&#x7528;</li>
+</ul>
+<p>&#x5982;&#xFF1A;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x9700;&#x6C42;&#xFF0C;&#x5339;&#x914D; div &#x6216; button &#x6807;&#x7B7E;&#x3002;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token comment">//   &#x5339;&#x914D;button&#x6807;&#x7B7E;</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\&lt;button\&gt;.+\&lt;\/button\&gt;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">gi</span></span>
+<span class="token comment">//   &#x5339;&#x914D;div&#x6807;&#x7B7E;</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\&lt;div\&gt;.+\&lt;\/div\&gt;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">gi</span></span>
+</code></pre>
+<p>&#x53EF;&#x89C1;&#x4E0A;&#x9762;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7ED3;&#x675F;&#x6807;&#x7B7E;div&#x3001;button&#x90FD;&#x5199;&#x91CD;&#x590D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x53EA;&#x5199;&#x4E00;&#x904D;&#x884C;&#x4E0D;&#x884C;&#xFF1F; &#x901A;&#x8FC7;&#x53CD;&#x5411;&#x5F15;&#x7528;&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#xFF01;</p>
+<p>&#x8BED;&#x6CD5;:</p>
+<pre class="language-"><code class="lang-javascript"><span class="token comment">//   &#x5339;&#x914D;button&#x6807;&#x7B7E;</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\&lt;(button)\&gt;.+\&lt;\/\1\&gt;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">gi</span></span>
+<span class="token comment">//   &#x5339;&#x914D;div&#x6807;&#x7B7E;</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\&lt;(div)\&gt;.+\&lt;\/\1\&gt;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">gi</span></span>
+</code></pre>
+<p>&#x6B63;&#x5219;&#x5185;&#x4F7F;&#x7528;<code>\&#x6570;&#x5B57;</code>&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x524D;&#x9762;&#x7684;&#x5C0F;&#x62EC;&#x53F7;&#x6355;&#x83B7;&#x7EC4;&#x5339;&#x914D;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x8FD9;&#x79CD;&#x6355;&#x83B7;&#x7684;&#x5F15;&#x7528;&#x4E5F;&#x53EB;&#x53CD;&#x5411;&#x5F15;&#x7528;&#x3002;</p>
+<blockquote>
+<p>&#x6355;&#x83B7;&#x7EC4;&#x7279;&#x70B9;&#xFF1A;&#x4F1A;&#x628A;&#x6355;&#x83B7;&#x7EC4;&#x5339;&#x914D;&#x5230;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x653E;&#x5230;&#x6B63;&#x5219;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#xFF0C;&#x4F9B;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x53CD;&#x5411;&#x5F15;&#x7528;</p>
+</blockquote>
+<p>&#x4E0A;&#x9762;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;\1&#x4EE3;&#x8868;&#x5F15;&#x7528;&#x6B63;&#x5219;&#x7F13;&#x51B2;&#x533A;&#x7B2C;1&#x4E2A;&#x7684;&#x62EC;&#x53F7;&#x4E2D;&#x5185;&#x5BB9;&#x3002;</p>
+<ul>
+<li><code>\1</code>&#x4EE3;&#x8868;&#x5F15;&#x7528;&#x6B63;&#x5219;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7B2C;1&#x4E2A;&#x62EC;&#x53F7;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;</li>
+<li><code>\2</code>&#x4EE3;&#x8868;&#x5F15;&#x7528;&#x6B63;&#x5219;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7B2C;2&#x62EC;&#x53F7;&#x4E2D;&#x7684;&#x5185;&#x5BB9;</li>
+<li><code>\n</code>&#x4EE3;&#x8868;&#x5F15;&#x7528;&#x6B63;&#x5219;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7B2C;n&#x62EC;&#x53F7;&#x4E2D;&#x7684;&#x5185;&#x5BB9;</li>
+</ul>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&apos;ooo1212ooo2323ooo3434ooo1234&apos;</span>
+<span class="token comment">// \1&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x5206;&#x7EC4;(\d)&#xFF0C;\2&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x5206;&#x7EC4;(\d)</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(\d)(\d)\1\2</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+<span class="token keyword">var</span> result <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token comment">// [&apos;1212&apos;, &apos;2323&apos;, &apos;3434&apos;]</span>
+</code></pre>
+<h2 id="&#x6848;&#x4F8B;-&#x624B;&#x673A;&#x53F7;&#x9690;&#x85CF;&#x4E2D;&#x95F4;4&#x4F4D;">&#x6848;&#x4F8B;-&#x624B;&#x673A;&#x53F7;&#x9690;&#x85CF;&#x4E2D;&#x95F4;4&#x4F4D;</h2>
+<p>&#x5982;&#xFF1A;&#x624B;&#x673A;&#x53F7;15807892578 &#x9690;&#x85CF;&#x4E2D;&#x95F4;&#x56DB;&#x4F4D;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;<code>158****2578</code></p>
+<p>&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x7684;replace&#x66FF;&#x6362;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>regexp<span class="token operator">|</span>substr<span class="token punctuation">,</span> newSubStr<span class="token operator">|</span><span class="token keyword">function</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x6848;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> tel <span class="token operator">=</span> <span class="token string">&apos;13534566789&apos;</span><span class="token punctuation">;</span> 
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(\d{3})\d{4}(\d{4})</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> tel<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>reg<span class="token punctuation">,</span><span class="token string">&quot;$1****$2&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 135****6789</span>
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong><code>\n</code><strong>&#x548C;</strong><code>$n</code><strong>&#x7684;&#x533A;&#x522B;&#xFF1A;</strong></p>
+<p><code>\n</code>&#x662F;&#x5199;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5185;&#x90E8;&#x4E2D;&#x7684;&#xFF0C;&#x7528;&#x6765;&#x5F15;&#x7528;&#x6B63;&#x5219;&#x7B2C;n&#x4E2A;&#x5206;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p><code>$n</code>&#x662F;&#x5199;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5916;&#x90E8;&#x4E2D;&#x7684;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x5728;&#x6B63;&#x5219;&#x76F8;&#x5173;&#x51FD;&#x6570;&#x4E2D;&#x8F83;&#x591A;&#xFF0C;&#x5982;&#x5B57;&#x7B26;&#x4E32;&#x7684;replace&#x51FD;&#x6570;</p>
+<h2 id="&#x6848;&#x4F8B;-&#x5C0F;&#x9A7C;&#x5CF0;&#x8F6C;&#x6362;">&#x6848;&#x4F8B;-&#x5C0F;&#x9A7C;&#x5CF0;&#x8F6C;&#x6362;</h2>
+<p>&#x628A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x4E0B;&#x5212;&#x7EBF;&#x53BB;&#x6389;&#xFF0C;&#x5E76;&#x4E14;&#x4E0B;&#x5212;&#x7EBF;&#x540E;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x6539;&#x4E3A;&#x5927;&#x5199;</p>
+<p>&#x5982;&#xFF1A;<code>var str=&quot;border-bottom-color&quot;</code> ;   // &#x66FF;&#x6362;&#x540E;&#x7ED3;&#x679C;<code>borderBottomColor</code></p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&apos;border-bottom-color&apos;</span>
+
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">-(\w)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+<span class="token keyword">var</span> result <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>reg<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">$0<span class="token punctuation">,</span> $1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// $0:&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;</span>
+  <span class="token comment">// $1:&#x7B2C;&#x4E00;&#x4E2A;&#x6355;&#x83B7;&#x7EC4;&#x5185;&#x5BB9;</span>
+  <span class="token keyword">return</span> $1<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// borderBottomColor</span>
+</code></pre>
+<p>&#x654F;&#x611F;&#x8BCD;&#x66FF;&#x6362;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> content <span class="token operator">=</span> <span class="token string">&apos;&#x4E0B;&#x8DEF;&#xFF0C;&#x5171;&#x4EA7;&#x515A;&#x6253;&#x91CE;&#x5E9F;&#x7269;&#xFF0C;fuck &#x6EDA;&#xFF0C; sb  &#x66F9;&#x5C3C;&#x739B; &#x5357;&#x6D77; &#x53F0;&#x6E7E;&#x7701;&apos;</span>
+<span class="token comment">// &#x4E0B;&#x8DEF;&#xFF0C;&#x6253;&#x91CE;&#x5E9F;&#x7269;&#xFF0C;*** &#x6EDA;&#xFF0C; ***  &#x66F9;&#x5C3C;&#x739B;</span>
+
+<span class="token comment">// &#x66FF;&#x6362;&#x539F;&#x5219;&#xFF1A;&#x66FF;&#x6362;&#x8C01;&#x5C31;&#x627E;&#x8C01;&#xFF01;&#xFF01;&#xFF01;&#xFF01;</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">fuck|sb|&#x5171;&#x4EA7;&#x515A;|&#x53F0;&#x6E7E;&#x7701;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+
+<span class="token comment">//   var newContent = content.replace(reg, &apos;***&apos;)</span>
+<span class="token comment">//   console.log(newContent) // &#x4E0B;&#x8DEF;&#xFF0C;&#x6253;&#x91CE;&#x5E9F;&#x7269;&#xFF0C;*** &#x6EDA;&#xFF0C; ***  &#x66F9;&#x5C3C;&#x739B;</span>
+
+<span class="token keyword">var</span> newContent <span class="token operator">=</span> content<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>reg<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">$0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// console.log($0)</span>
+    <span class="token keyword">return</span> <span class="token string">&apos;*&apos;</span><span class="token punctuation">.</span><span class="token function">repeat</span><span class="token punctuation">(</span>$0<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token comment">// &#x66FF;&#x6362;&#x6210;&#x5BF9;&#x5E94;&#x5B57;&#x7B26;&#x4E2A;&#x6570;&#x7684;*&#x53F7;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newContent<span class="token punctuation">)</span> <span class="token comment">// &#x4E0B;&#x8DEF;&#xFF0C;***&#x6253;&#x91CE;&#x5E9F;&#x7269;&#xFF0C;**** &#x6EDA;&#xFF0C; **  &#x66F9;&#x5C3C;&#x739B; &#x5357;&#x6D77; ***</span>
+</code></pre>
+<h2 id="&#x975E;&#x6355;&#x83B7;&#x7EC4;">&#x975E;&#x6355;&#x83B7;&#x7EC4;</h2>
+<p>&#x6709;&#x4E9B;&#x65F6;&#x5019;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EA;&#x60F3;&#x5728;&#x628A;&#x6B63;&#x5219;&#x5F53;&#x6210;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x6765;&#x5339;&#x914D;&#x3002;&#x4F46;&#x662F;&#x5E76;&#x6CA1;&#x6709;&#x53CD;&#x5411;&#x5F15;&#x7528;&#x5B83;&#xFF0C;&#x8FD9;&#x65F6;&#xFF0C;&#x6355;&#x83B7;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x8BBE;&#x7F6E;&#x5230;&#x6B63;&#x5219;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x662F;&#x6D6A;&#x8D39;&#x6027;&#x80FD;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x975E;&#x6355;&#x83B7;&#x7EC4;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF1A;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre class="language-"><code>(?:&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;)
+</code></pre><p>&#x5728;&#x62EC;&#x53F7;&#x7684;&#x524D;&#x9762;&#x52A0;<code>?:</code>&#x5373;&#x53EF;&#xFF0C;&#x6355;&#x83B7;&#x7EC4;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x4E0D;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x5230;&#x6B63;&#x5219;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#xFF0C;&#x6027;&#x80FD;&#x66F4;&#x9AD8;&#xFF01;</p>
+<p>&#x8FD9;&#x65F6;&#x5019;&#x81EA;&#x7136;&#x4E5F;&#x5C31;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#x53CD;&#x5411;&#x5F15;&#x7528;&#x5B83;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x56FE;&#x5F62;&#x5316;&#x770B;&#x6355;&#x83B7;&#x7EC4;&#x548C;&#x975E;&#x6355;&#x83B7;&#x7EC4;&#xFF1A;</p>
+<ul>
+<li>&#x6355;&#x83B7;&#x7EC4;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5916;&#x9762;&#x4F1A;&#x5305;&#x88F9;&#x4E00;&#x4E2A;&#x865A;&#x7EBF;&#xFF1A;</li>
+</ul>
+<p><img src="assets/1664375233322.png" alt="1664375233322"></p>
+<ul>
+<li>&#x975E;&#x6355;&#x83B7;&#x7EC4;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5916;&#x9762;&#x4E0D;&#x4F1A;&#x5305;&#x88F9;&#x4E00;&#x4E2A;&#x865A;&#x7EBF;&#xFF0C;&#x540E;&#x7EED;&#x5C31;&#x65E0;&#x6CD5;&#x5F15;&#x7528;&#x62EC;&#x53F7;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;</li>
+</ul>
+<p><img src="C:/Users/Admin/AppData/Local/Temp/1664376130105.png" alt="1664376130105"></p>
+<p>&#x4EC0;&#x4E48;&#x4F7F;&#x7528;&#x975E;&#x6355;&#x83B7;&#x7EC4;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#x5462;&#xFF1F;</p>
+<p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x628A;&#x67D0;&#x4E9B;&#x6B63;&#x5219;&#x5F53;&#x505A;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x53BB;&#x5339;&#x914D;&#xFF0C;&#x800C;&#x5E76;&#x6CA1;&#x6709;&#x5F15;&#x7528;&#x6355;&#x83B7;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#xFF0C; &#x8FD9;&#x662F;&#x53EF;&#x91C7;&#x7528;&#x975E;&#x6355;&#x83B7;&#x7EC4;&#x6765;&#x4F18;&#x5316;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x3002;</p>
+<h1 id="&#x57FA;&#x4E8E;&#x53D8;&#x91CF;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x6B63;&#x5219;">&#x57FA;&#x4E8E;&#x53D8;&#x91CF;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x6B63;&#x5219;</h1>
+<p>&#x7531;&#x4E8E;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x53EA;&#x6709;&#x5728;&#x7A0B;&#x5E8F;&#x5B9E;&#x9645;&#x8FD0;&#x884C;&#x4E2D;&#x624D;&#x77E5;&#x9053;&#x5177;&#x4F53;&#x7684;&#x503C;&#xFF0C;&#xFF0C;&#x56E0;&#x4E3A;&#x901A;&#x8FC7;&#x5B57;&#x9762;&#x91CF;&#x5F62;&#x5F0F;&#x521B;&#x5EFA;&#x7684;&#x6B63;&#x5219;&#x53EA;&#x80FD;&#x5339;&#x914D;&#x7279;&#x5B9A;&#x89C4;&#x5219;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x800C;&#x53D8;&#x91CF;&#x5B83;&#x662F;&#x52A8;&#x6001;&#x53D8;&#x5316;&#xFF0C;&#x65E0;&#x6CD5;&#x77E5;&#x9053;&#x5177;&#x4F53;&#x89C4;&#x5219;&#xFF0C;&#x56E0;&#x6B64;&#x521B;&#x5EFA;&#x57FA;&#x4E8E;&#x53D8;&#x91CF;&#x7684;&#x6B63;&#x5219;&#x65F6;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript">    <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&apos;abc123def456&apos;</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x5B57;&#x9762;&#x91CF;[&#x63A8;&#x8350;]</span>
+    <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}\w</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span>
+
+    <span class="token comment">// &#x7B49;&#x4EF7;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</span>
+    <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span><span class="token string">&quot;\\d{3}&quot;</span><span class="token punctuation">,</span><span class="token string">&apos;g&apos;</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<pre class="language-"><code class="lang-javascript"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">&apos;my name is dachui ouwen kebi&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&apos;dachui&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RegExp</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// &#x57FA;&#x4E8E;&#x53D8;&#x91CF;&#x521B;&#x5EFA;&#x7684;&#x6B63;&#x5219;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF1A;</p>
+<ul>
+<li>&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x6B63;&#x5219;&#x4E2D;&#x51FA;&#x73B0;&#x4E86;&#x53CD;&#x659C;&#x6760; <code>\</code>&#x8981;&#x8F6C;&#x4E49;&#xFF0C;&#x5373; <code>\w</code>&#x8981;&#x5199;&#x6210;<code>\\w</code>,&#x800C;&#x5728;&#x5B57;&#x9762;&#x4E2D;&#x662F;&#x4E0D;&#x9700;&#x8981;</li>
+</ul>
+<h1 id="&#x6B63;&#x5219;&#x76F8;&#x5173;&#x7684;&#x65B9;&#x6CD5;">&#x6B63;&#x5219;&#x76F8;&#x5173;&#x7684;&#x65B9;&#x6CD5;</h1>
+<ul>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/match" target="_blank">str.match(reg)</a>&#xFF1B; &#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code class="lang-javascript">  <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&apos;123abc456def&apos;</span>
+  <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// [ &apos;123&apos;, &apos;456&apos; ]</span>
+</code></pre>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace" target="_blank">str.replace(reg|str,newStr|function)</a>;  &#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x6B63;&#x5219;&#x8FDB;&#x884C;&#x66FF;&#x6362;</p>
+<pre class="language-"><code class="lang-javascript">  <span class="token keyword">var</span> tel <span class="token operator">=</span> <span class="token string">&apos;13534566789&apos;</span><span class="token punctuation">;</span> 
+  <span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">(\d{3})\d{4}(\d{4})</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> tel<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>reg<span class="token punctuation">,</span><span class="token string">&quot;$1****$2&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 135****6789</span>
+</code></pre>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test" target="_blank">reg.test(str)</a>;  &#x68C0;&#x6D4B;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x5426;&#x6EE1;&#x8DB3;&#x6B63;&#x5219;,&#x6EE1;&#x8DB3;&#x8FD4;&#x56DE;true,&#x5426;&#x5219;false</p>
+<pre class="language-"><code class="lang-javascript">  <span class="token keyword">let</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span><span class="token regex-flags">i</span></span>
+  <span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">&apos;qd123abc456&apos;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>reg<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// true</span>
+</code></pre>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec" target="_blank">reg.exec(str)</a>; &#x83B7;&#x53D6;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7ED3;&#x679C;&#x548C;&#x6355;&#x83B7;&#x7EC4;&#x7684;&#x7ED3;&#x679C;</p>
+<pre class="language-"><code class="lang-javascript">  <span class="token keyword">var</span> info <span class="token operator">=</span> <span class="token string">&apos;36113118990206311X&apos;</span>
+  <span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{6}(\d{8})\w{4}</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span>
+  <span class="token keyword">var</span> result <span class="token operator">=</span> reg<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>info<span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// 36113118990206311X  &#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">// 18990206  &#x7B2C;&#x4E00;&#x4E2A;&#x6355;&#x83B7;&#x7EC4;&#x7ED3;&#x679C;</span>
+</code></pre>
+</li>
+</ul>
+<p>&#x200B;    exec:&#x83B7;&#x53D6;&#x7F51;&#x9875;&#x4E2D;&#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x56FE;&#x7247;&#x5730;&#x5740;&#xFF1A;</p>
+<pre class="language-"><code class="lang-javascript"><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+      <span class="token keyword">var</span> htmlStr <span class="token operator">=</span>
+        <span class="token string">&quot;&lt;p&gt;&lt;Img src=&apos;1.png&apos;/&gt;&lt;b&gt;&#x54C8;&#x54C8;&lt;/b&gt;&lt;img   src=&apos;2.png&apos;/&gt;&lt;div&gt;&lt;img src=&apos;3.png&apos;/&gt;&lt;/div&gt;&lt;/p&gt;&quot;</span>
+
+      <span class="token comment">// &#x627E;&#x51FA;&#x56FE;&#x7247;&#x7684;src&#x5730;&#x5740;&#xFF0C;&#x5B58;&#x50A8;&#x5728;&#x6570;&#x7EC4;&#x4E2D;</span>
+      <span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\&lt;img\s+src=[&apos;&quot;](.+?)[&apos;&quot;]\/\&gt;</span><span class="token regex-delimiter">/</span><span class="token regex-flags">gi</span></span>
+      <span class="token comment">//   console.log(reg.exec(htmlStr))</span>
+      <span class="token comment">//   console.log(reg.exec(htmlStr))</span>
+      <span class="token comment">//   console.log(reg.exec(htmlStr))</span>
+      <span class="token comment">//   console.log(reg.exec(htmlStr)) // null</span>
+
+      <span class="token comment">//   exec&#x6BCF;&#x6B21;&#x4EC5;&#x83B7;&#x53D6;&#x7B2C;&#x4E00;&#x6B21;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x9700;&#x8981;&#x5FAA;&#x73AF;&#x5339;&#x914D;</span>
+      <span class="token keyword">var</span> result
+      <span class="token comment">//   &#x628A;exec&#x6267;&#x884C;&#x7ED3;&#x679C;&#x8D4B;&#x503C;&#x7ED9;result,&#x5728;&#x5224;&#x65AD;result</span>
+      <span class="token keyword">var</span> imgArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>result <span class="token operator">=</span> reg<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>htmlStr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// console.log(result[1])</span>
+        imgArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>imgArr<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x7528;match&#x548C;exec?</p>
+<ul>
+<li>match&#xFF1A;&#x83B7;&#x53D6;&#x6B63;&#x5219;&#x5339;&#x914D;&#x7684;&#x7ED3;&#x679C;</li>
+<li>exec&#xFF1A;&#x83B7;&#x53D6;&#x6B63;&#x5219;&#x5339;&#x914D;&#x548C;&#x6355;&#x83B7;&#x7EC4;&#x7684;&#x7ED3;&#x679C;</li>
+</ul>
+
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="25-JS 继承.html" class="navigation navigation-prev " aria-label="Previous page: 25-JavaScript继承">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="27-bootstrap响应式框架.html" class="navigation navigation-next " aria-label="Next page: 27-BootStrap响应式框架">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"26-JavaScript正则表达式","level":"1.4.26","depth":2,"next":{"title":"27-BootStrap响应式框架","level":"1.4.27","depth":2,"path":"JavaScript基础/27-bootstrap响应式框架.md","ref":"JavaScript基础/27-bootstrap响应式框架.md","articles":[]},"previous":{"title":"25-JavaScript继承","level":"1.4.25","depth":2,"path":"JavaScript基础/25-JS 继承.md","ref":"JavaScript基础/25-JS 继承.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","chapter-fold","prism","-highlight","splitter","theme-fexa","livereload"],"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"livereload":{},"splitter":{},"search":{},"theme-fexa":{"search-placeholder":"输入关键字搜索","logo":"./logo.png"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"JavaScript基础/26-Javascript正则表达式.md","mtime":"2022-11-26T12:20:36.782Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-13T16:00:58.004Z"},"basePath":"..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+
+    </body>
+</html>
+
